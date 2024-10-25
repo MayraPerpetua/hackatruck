@@ -53,18 +53,13 @@ struct instagram: View {
             Spacer()
         }
         HStack{
-            //Image(.grid)
-//                .resizable()
-//                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-//                .frame(width: 20 , height: 20)
-            Image(.folder)
-                .resizable()
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .frame(width: 20 , height: 20)
-            Image(.person)
-                .resizable()
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .frame(width: 20 , height: 20)
+           Spacer()
+            Image(systemName: "squareshape.split.3x3")
+            Spacer()
+            Image(systemName: "folder")
+            Spacer()
+            Image(systemName: "person.fill")
+            Spacer()
         }
         
         HStack{
