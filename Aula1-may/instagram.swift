@@ -52,6 +52,8 @@ struct instagram: View {
             }
             Spacer()
         }
+        Divider()
+            .opacity(0)
         HStack{
            Spacer()
             Image(systemName: "squareshape.split.3x3")
@@ -61,7 +63,8 @@ struct instagram: View {
             Image(systemName: "person.fill")
             Spacer()
         }
-        
+        Divider()
+            .opacity(0)
         HStack{
             Text("")
                 .frame(width: 130, height: 130)
