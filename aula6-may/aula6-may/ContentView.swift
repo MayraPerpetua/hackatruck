@@ -6,28 +6,32 @@
 //
 
 import SwiftUI
-import _MapKit_SwiftUI
+import MapKit
 
 struct ContentView: View {
     
-
-    
     var body: some View {
         ZStack{
-            
-            ForEach(arrayLocais){ a in
-                Map(
-                MapAnottation
-                ){
+            Map(){
+                ForEach(arrayLocais){ a in
+                    Annotation("Favorito", coordinate: a.coordinate) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 5)
+                                .fill(Color.white)
+                            Text(a.name)
+                                .padding(5)
+                        }
+                    }
+                }
             }
             
-            }
+            
             
             VStack{
                 Text("")
-                .frame(width: 400, height: 100)
-                .background(Color.white)
-                .opacity(0.5)
+                    .frame(width: 400, height: 100)
+                    .background(Color.white)
+                    .opacity(0.5)
                 Spacer()
             }
             
@@ -39,14 +43,14 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack{
-                ForEach(arrayLocais) { a in
-                   
+                    ForEach(arrayLocais) { a in
+                        
                         Spacer()
                         
                         AsyncImage(url: URL(string: a.flag)) { image in
                             image.image?.resizable().scaledToFit()
                         }
-
+                        
                         
                     }
                 }
@@ -57,6 +61,8 @@ struct ContentView: View {
     }
 }
 
+
 #Preview {
     ContentView()
 }
+
