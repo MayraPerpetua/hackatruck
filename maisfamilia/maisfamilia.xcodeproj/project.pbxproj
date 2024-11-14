@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400C65242CE56946007DC8F9 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C65232CE56946007DC8F9 /* Feed.swift */; };
+		400C65262CE56DCB007DC8F9 /* Retrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C65252CE56DCB007DC8F9 /* Retrato.swift */; };
+		400C65282CE56DFA007DC8F9 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C65272CE56DFA007DC8F9 /* Perfil.swift */; };
+		400C652A2CE57EB9007DC8F9 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C65292CE57EB9007DC8F9 /* SheetView.swift */; };
 		40BBF7B02CE40FD900BFC065 /* maisfamiliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBF7AF2CE40FD900BFC065 /* maisfamiliaApp.swift */; };
 		40BBF7B22CE40FD900BFC065 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBF7B12CE40FD900BFC065 /* ContentView.swift */; };
 		40BBF7B42CE40FDA00BFC065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BBF7B32CE40FDA00BFC065 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400C65232CE56946007DC8F9 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		400C65252CE56DCB007DC8F9 /* Retrato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retrato.swift; sourceTree = "<group>"; };
+		400C65272CE56DFA007DC8F9 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		400C65292CE57EB9007DC8F9 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		40BBF7AC2CE40FD900BFC065 /* maisfamilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maisfamilia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BBF7AF2CE40FD900BFC065 /* maisfamiliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maisfamiliaApp.swift; sourceTree = "<group>"; };
 		40BBF7B12CE40FD900BFC065 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +43,10 @@
 		40BBF7A32CE40FD900BFC065 = {
 			isa = PBXGroup;
 			children = (
+				400C65292CE57EB9007DC8F9 /* SheetView.swift */,
+				400C65272CE56DFA007DC8F9 /* Perfil.swift */,
+				400C65252CE56DCB007DC8F9 /* Retrato.swift */,
+				400C65232CE56946007DC8F9 /* Feed.swift */,
 				40BBF7AE2CE40FD900BFC065 /* maisfamilia */,
 				40BBF7AD2CE40FD900BFC065 /* Products */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400C65282CE56DFA007DC8F9 /* Perfil.swift in Sources */,
 				40BBF7B22CE40FD900BFC065 /* ContentView.swift in Sources */,
+				400C65262CE56DCB007DC8F9 /* Retrato.swift in Sources */,
+				400C65242CE56946007DC8F9 /* Feed.swift in Sources */,
+				400C652A2CE57EB9007DC8F9 /* SheetView.swift in Sources */,
 				40BBF7B02CE40FD900BFC065 /* maisfamiliaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
