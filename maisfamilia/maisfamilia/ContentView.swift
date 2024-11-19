@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
 
-  
     var body: some View {
         
         TabView{
-            Feed()
-                .tabItem {
-                    Label("Family Feed", systemImage: "house")
-                    
-                }  .toolbarBackground(.visible, for: .tabBar).toolbarBackground(Color.white.opacity(0.8), for: .tabBar)
-            Retrato()
+           
+            PhotoFrameView()
                 .tabItem{
                     Label("Porta Retrato", systemImage: "photo")
                 }   .toolbarBackground(.visible, for: .tabBar)
                 .toolbarBackground(Color.white.opacity(0.8), for: .tabBar)
                 
             .badge(2)
+            Feed()
+                .tabItem {
+                    Label("Family Feed", systemImage: "house")
+                    
+                }  .toolbarBackground(.visible, for: .tabBar).toolbarBackground(Color.white.opacity(0.8), for: .tabBar)
             Perfil()
                 .tabItem{
                     Label("Meu Perfil", systemImage: "person.crop.circle")

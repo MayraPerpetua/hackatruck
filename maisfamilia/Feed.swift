@@ -74,26 +74,37 @@ struct Feed: View{
                     //post
                     VStack{
                         HStack{
-                            AsyncImage(url: URL(string: element.image ?? "")) { image in
+                            AsyncImage(url: URL(string: element.image)) { image in
                                 image
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 60, height: 60)
                                     .cornerRadius(40)
+                                    .padding(.leading, 20)
+                                    .padding(.trailing, 15)
+
                             } placeholder: {
                                 Image(systemName: "photo.fill")
+                                
                             }
                             VStack{
                                 HStack{
                                     Text(element.name ?? "")
+                                        .padding(.bottom, 5)
+                                    Spacer()
                                     Image(systemName: "ellipsis")
+                                        .padding(.trailing,20)
                                         .foregroundStyle(Color("Green"))
+                                        
                                 }
-                                
-                                Text(element.createdat)
-                                    .foregroundColor(.gray)
-                                    .font(.system(size: 12))
+                                HStack{
+                                    Text(element.createdat)
+                                        .foregroundColor(.gray)
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                }
                             }
+                            Spacer()
                         }
                         
                         VStack{
@@ -102,16 +113,23 @@ struct Feed: View{
                                 .padding()
                         }
                         
-                        AsyncImage(url: URL(string: element.image ?? "")){
+                        AsyncImage(url: URL(string: element.image)){
                             image in image
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
+                                .frame(width: 200, height: 300)
                         } placeholder: {Color.gray}
                         HStack{
                             Image(systemName: "heart")
                                 .resizable()
                                 .frame(width: 24, height:22)
                                 .foregroundColor(Color("Red"))
+//                                .onTapGesture {
+//                                    element.reactions + 1
+//                                    print(element.reactions + 1)
+//                                    viewModel.momentUser[element.id].reactions = element.reactions + 1
+//                                    print(viewModel.momentUser[element.id].reactions)
+//                                }
                             Text("\(element.reactions)")
                             
                                 .bold()
@@ -132,7 +150,7 @@ struct Feed: View{
                         .padding(.top, 10)
                         
                     }
-                    .frame(width: 370, height: 700)
+                    .frame(width: 370, height: 580)
                     .background()
                     .cornerRadius(20)
                     .shadow(color:Color("LightGreen"), radius:9, x:10, y:10)
